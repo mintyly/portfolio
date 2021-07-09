@@ -1,0 +1,112 @@
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+body {
+	margin: 0;
+	margin-top: 0px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+header {
+	display: flex;
+	position: static;
+	top: 0px;
+	left: 0;
+	right: 0;
+	height: 0px;
+	line-height: 30px;
+	background-color: rgba(255, 255, 255, 0);
+}
+header * {
+	display: inline;
+	height: 50px;
+}
+header li {
+	margin-left: 50px;
+}
+
+section {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    background-size: cover;
+    background-position: center; 
+    background-repeat:  repeat; 
+    background-attachment: local; 
+    
+    }
+
+#about .profile-img {
+	width: 300px;
+}
+footer {
+	text-align: center;
+	padding: 50px;
+}
+
+img {
+	border: 5px solid white;
+    border-radius: 5px;
+    padding: 0px;
+    max-width:200px;	
+    height:auto;
+	margin-right: 785px;
+	margin-top: -70px;
+}
+
+#about h1 {
+	margin-top: 0px;
+	font-size: 2.5em;
+	margin-right: 785px;
+	color: white;
+
+
+	
+}
+
+#about h2{
+    color: white;
+    font-size: 1.5em;
+	text-align: middle;
+	margin-left: 380px;
+	margin-top: -260px;
+	white-space: pre-line;
+}
+
+#achievements h2 {
+	font-size: 2.5em;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#achievements h3 {
+	font-size: 2em;
+	text-align: left;
+}
+
+
+
+header a {
+	text-decoration: none;
+	color: black;
+}
+
+
+#about {
+	background-image: linear-gradient(rgba(255,255,255,0.45),rgba(255,255,255,0.45)), url(./images/POGCHAMPS.png);
+    background-size: 1600px 900px;
+    background-position: 50% 50%;
+	
+
+}   
+#achievements {
+	background-image: linear-gradient(rgba(255,255,255,0.45),rgba(255,255,255,0.45)), url(./images/OHNO.png);
+    background-size: 90%;
+	background-position: 50% 200%;
+	text-align: left;
+	color: white;
+	
+}

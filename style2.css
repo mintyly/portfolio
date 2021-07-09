@@ -1,0 +1,108 @@
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+body {
+	margin: 0;
+	margin-top: 0px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+header {
+	display: flex;
+	position: static;
+	top: 0px;
+	left: 0;
+	right: 0;
+	height: 0px;
+	line-height: 30px;
+	background-color: rgba(255, 255, 255, 0);
+}
+header * {
+	display: inline;
+	height: 50px;
+}
+header li {
+	margin-left: 50px;
+}
+header {
+	display: flex;
+	position: static;
+	top: 0px;
+	left: 0;
+	right: 0;
+	height: 0px;
+	line-height: 30px;
+	background-color: rgba(255, 255, 255, 0);
+}
+header * {
+	display: inline;
+	height: 50px;
+}
+header li {
+	margin-left: 50px;
+}
+
+section {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    background-size: auto;
+    background-position: right; 
+    background-repeat:  none; 
+    background-attachment: local; 
+    
+    }
+
+#about .profile-img {
+	width: 300px;
+}
+footer {
+	text-align: center;
+	padding: 10px;
+}
+
+img {
+	border: 5px solid white;
+    border-radius: 5px;
+    padding: 0px;
+    max-width:200px;	
+    height:auto;
+	margin-right: 785px;
+	margin-top: -70px;
+}
+
+#CCA h1 {
+	margin-top: 0px;
+	font-size: 2.5em;
+	margin-right: 785px;
+	color: white;
+    text-align: center;
+
+
+	
+}
+
+#CCA h2{
+    color: white;
+    font-size: 1.5em;
+	text-align: left;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+}
+
+
+#CCA {
+	background-image: linear-gradient(rgba(255,255,255,0.45),rgba(255,255,255,0.45)), url(./images/POGMAN.png);
+    background-size: 125%;
+    background-position: 25% 40%;
+    text-align: left;
+    color: white;
+	
+
+}   
