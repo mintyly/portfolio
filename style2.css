@@ -78,7 +78,7 @@ img {
 	margin-top: 0px;
 	font-size: 2.5em;
 	margin-right: 785px;
-	color: white;
+	color: black;
     text-align: center;
 
 
@@ -86,7 +86,7 @@ img {
 }
 
 #CCA h2{
-    color: white;
+    color: black;
     font-size: 1.5em;
 	text-align: left;
 
@@ -103,7 +103,7 @@ header a {
     background-size: 125%;
     background-position: 25% 40%;
     text-align: left;
-    color: white;
+    color: black;
 	  background: url(mountain.jpg);
 background-repeat: no-repeat;
   background-size: auto;
