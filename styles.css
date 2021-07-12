@@ -106,8 +106,5 @@ header a {
 }   
 #achievements {
 	text-align: left;
-	color: white;
-	  background: url(mountain.jpg);
-  background-repeat: no-repeat;
-  background-size: 300px 100px;
+	color: black;
 }
