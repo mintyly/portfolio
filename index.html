@@ -77,20 +77,56 @@
 
     </div>
 
-    <script>
-
+    <!-- <script>
         function toggleSection(sectionId) {
             const aboutMeSection = document.getElementById('about-me');
             const awardsAchievementsSection = document.getElementById('awards-achievements');
+            const contentSection = document.getElementById('content');
 
             if (sectionId === 'about-me') {
                 aboutMeSection.style.display = 'flex';
                 awardsAchievementsSection.style.display = 'none';
+
+                // Set max-height based on content height
+                contentSection.style.maxHeight = (aboutMeSection.scrollHeight + 20) + 'px';
+
             } else if (sectionId === 'awards-achievements') {
                 aboutMeSection.style.display = 'none';
                 awardsAchievementsSection.style.display = 'block';
+
+                // Set max-height based on content height
+                contentSection.style.maxHeight = (awardsAchievementsSection.scrollHeight + 20) + 'px';
             }
         }
+
+        // Initial setup to set the max-height for the default section (About Me)
+        toggleSection('about-me');
+    </script> -->
+
+    <script>
+        function toggleSection(sectionId) {
+            const aboutMeSection = document.getElementById('about-me');
+            const awardsAchievementsSection = document.getElementById('awards-achievements');
+            const contentSection = document.getElementById('content');
+
+            if (sectionId === 'about-me') {
+                aboutMeSection.style.display = 'flex';
+                awardsAchievementsSection.style.display = 'none';
+
+                // Set the content div's height based on the about me section's height
+                contentSection.style.height = aboutMeSection.scrollHeight + 'px';
+
+            } else if (sectionId === 'awards-achievements') {
+                aboutMeSection.style.display = 'none';
+                awardsAchievementsSection.style.display = 'block';
+
+                // Set the content div's height based on the awards and achievements section's height
+                contentSection.style.height = (awardsAchievementsSection.scrollHeight + 20) + 'px';
+            }
+        }
+
+        // Initial setup to set the height for the default section (About Me)
+        toggleSection('about-me');
     </script>
 </body>
 
