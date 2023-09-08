@@ -1,14 +1,142 @@
-a:link { text-decoration: none; }
+/*a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+a:active { text-decoration: none; }*/
 
-body {
+
+body, html {
 	margin: 0;
-	margin-top: 0px;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	padding: 0;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	background-color: #000000;
 }
-header {
+
+button {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#main-container {
+	display: flex; /* Use Flexbox */
+	flex-direction: column; /* Arrange child elements vertically */
+	align-items: center; /* Center child elements horizontally */
+	border: solid 3px transparent;
+	border-radius: 15px;
+	width: 600px;
+	height: auto;
+	padding: 50px;
+	font-weight: 700;
+}
+
+#button-bar {
+	align-content: flex-start;
+	border: solid 3px white;
+	border-radius: 15px;
+	padding: 10px;
+	background-color: white;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+#button, #about-me-button {
+	border: solid 2px black;
+	border-radius: 20px;
+	color: black;
+	background-color: transparent;
+	padding: 10px;
+	font-weight: 700;
+}
+
+	#button:hover, #about-me-button:hover {
+		background-color: black;
+		color: white;
+		border-color: white;
+		transition-duration: 0.2s;
+	}
+
+#content {
+	border: solid 3px white;
+	border-radius: 15px;
+	background-color: white;
+	color: black;
+	width: 100%; /* Occupy the full width of the container */
+	padding: 10px;
+}
+
+#about-me {
+	margin-left: 10px;
+	display: flex; /* Use Flexbox to arrange text and image side by side */
+	justify-content: center; /* Separate text and image with space */
+	align-items: center; /* Center vertically */
+}
+
+.about-me-text {
+	display: flex;
+	flex-direction: column; /* Arrange text vertically */
+	justify-content: normal;
+	flex: 1; /* Let the text take as much space as needed */
+	margin-right: 20px; /* Add spacing between text and image */
+}
+
+	.about-me-text h1 {
+		margin-bottom: 0px;
+		margin-top: 0px;
+		font-size: 2.5em;
+	}
+
+
+.about-me-image {
+	display: flex;
+	flex-direction: column; /* Arrange text vertically */
+	justify-content: right;
+	/* Let the image take as much space as needed */
+	flex: 0;
+}
+
+	.about-me-image img {
+		border: solid 3px black;
+		border-radius: 100px;
+	}
+
+#link-button-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+	#link-button-bar #button {
+		height: 40px;
+		width: 40px;
+		margin-right: 10px;
+	}
+
+@media only screen and (max-width: 600px) {
+	#main-container {
+		width: 100%;
+	}
+
+	#button-bar {
+		width: 100%;
+	}
+
+	#about-me-button {
+		margin-bottom: 5px;
+	}
+
+	#about-me {
+		flex-direction: column-reverse;
+	}
+
+	.about-me-text {
+		margin-right: 0px;
+	}
+}
+
+/*header {
 	display: flex;
 	position: static;
 	top: 0px;
@@ -108,3 +236,4 @@ header a {
 	text-align: left;
 	color: black;
 }
+*/

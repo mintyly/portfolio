@@ -3,77 +3,96 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+    <title>My portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a74ec4f620.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        
-        <ol>
-            <li><a href="./index.html">About Me!</a></li>
 
-            <li><a href="./cca.html">CCA</a></li>
-            
-            <li><a href="https://github.com/minty-green/projects">My Projects</a></li>
-            
-        </ol>   
-        
-    </header>
+    <div id="main-container">
+        <div id="button-bar">
+            <button id="about-me-button" onclick="toggleSection('about-me')">About Me</button>
+            <button id="about-me-button" onclick="toggleSection('awards-achievements')">Awards & achievements</button>
+        </div>
 
-    <main>
-        <section id="about">
-            
-
-            <div class="section-inner">
-                <img src="images/junjie.jpg">
-                <h1>Hi, I'm <a style="color: #96DDE1">Jun Jie</a></h1>
-                <h2>
-            
-                    A cybersec student at NP
-
-                </h2>
-            
+        <div id="content">
+            <div id="about-me" class="about-me-content">
+                <div class="about-me-text">
+                    <h1>heya! I'm Jun Jie!</h1>
+                    <p>Year 2 Singtel Cadet Scholar studying Cybersecurity And Digital Forensics @ Ngee Ann Polytechic</p>
+                    <div id="link-button-bar">
+                        <button id="button" onclick="window.location.href='https://www.linkedin.com/in/ongjun-jie/'"><i class="fa-brands fa-linkedin-in fa-lg"></i></button>
+                        <button id="button" onclick="window.location.href='https://github.com/mintyly'"><i class="fa-brands fa-github-alt fa-lg"></i></button>
+                    </div>
+                </div>
+                <div class="about-me-image">
+                    <img src="images/me.jpeg">
+                </div>
             </div>
-        </section>
+            <div id="awards-achievements" style="display: none;">
+                <h1>Awards & Achievements</h1>
+                <h3>2023</h3>
+                <ul>
+                    <li>Singtel Cadet Scholar (Cyber)</li>
+                    <li>AWS Certified Cloud Practitioner</li>
+                    <li>Sentinel Programme Workshop - Cyber Data Analysis</li>
+                </ul>
+                <h3>2022</h3>
+                <ul>
+                    <li>Lag and Crash 4th (fate fairy poultry)</li>
+                    <li>Curtin Singapore Hackathon - Mycological  Mayhem</li>
+                </ul>
+                <h3>2021</h3>
+                <ul>
+                    <li>YCEP@TP - 3rd</li>
+                    <li>YCEP@NP - 4th</li>
+                    <li>YCEP@RP - 4th</li>
+                    <li>YCEP Online</li>
+                    <li>GSCE O Level</li>
+                    <li>Edusave Award for achievements, good leadership, & Service (EAGLES)</li>
+                    <li>Cisco Introduction to Cybersecurity</li>
+                </ul>
 
-        <section id="achievements">
-            <div class="section-inner">
-    
-            <h2>Awards and Achievements</h2>
-            
-            <h3>2022</h3>
-                <li style="font-size: 25px">Lag and Crash 4th (fate fairy poultry)</li>
-                
-            <h3>2021</h3>
-                <li style="font-size: 25px"><a href="./Certs/Ong Jun Jie__Top 3 Prizes_2021.png" target="_blank" style="color: #737374">YCEP@TP - 3rd</a></li>
-                <li style="font-size: 25px"><a href="./Certs/Jun Jie's Participant certificate.png" target="_blank" style="color: #737374">YCEP@NP - 4th</a></li>
-                <li style="font-size: 25px"><a href="./Certs/YCEP2021 cert_competence_Ong Jun Jie.png" target="_blank" style="color: #737374">YCEP@RP - 4th</a></li>
-                <li style="font-size: 25px"><a href="./Certs/Ong-Jun-Jie-cert.png" target="_blank" style="color: #737374">YCEP Online</a></li>
-                <li style="font-size: 25px">GSCE O Level</li>
-                <li style="font-size: 25px">Edusave Award for achievements, good leadership, & Servrice (EAGLES)</li>
-
-            <h3>2020</h3>
-                <li style="font-size: 25px"><a href="./Certs/echa.jpg" target="_blank" style="color: #737374", font-size: 25px">Edusave Character Award (ECHA)</a></li>
-                <li style="font-size: 25px"><a href="./Certs/eagles.jpg" target="_blank" style="color: #737374" style="font-size: 25px">Edusave Award for achievements, good leadership, & Servrice (EAGLES)</a></li>
-                <li style="font-size: 25px"><a href="./Certs/ViceChairman.jpg" target="_blank" style="color: #737374" style="font-size: 25px">Infocomm Vice-Chairman (Production) Certificate of Appointment</a></li>
-                <li style="font-size: 25px"><a href="./Certs/Ong Jun Jie (1).png" target="_blank" style="color: #737374" style="font-size: 25px">YCEP@NP - 1st</a></li>
-                <li style="font-size: 25px"><a href="./Certs/Jun Jie Ong - 2020 YCEP CCTF - Third Place Team Certificate of Excellence (1).png" target="_blank" style="color: #737374" style="font-size: 25px">YCEP@Central - 3rd</a></li>
-                <li style="font-size: 25px"><a href="./Certs/Ong-Jun-Jie_YCEP2020-cert_competence.png" target="_blank" style="color: #737374" style="font-size: 25px">YCEP@RP - 10th</a></li>
-                <li style="font-size: 25px"><a href="./Certs/SP.jpg" target="_blank" style="color: #737374" style="font-size: 25px">YCEP@SP</a></li>
-                <li style="font-size: 25px"><a href="./Certs/oknoted.jpg" target="_blank" style="color: #737374" style="font-size: 25px">YCEP Online</a></li>
-                <li style="font-size: 25px"><a href="./Certs/STACK.jpg" target="_blank" style="color: #737374" style="font-size: 25px">STACK the Flags</a></li>
-
+                <h3>2020</h3>
+                <ul>
+                    <li>Edusave Character Award (ECHA)</li>
+                    <li>Edusave Award for achievements, good leadership, & Service (EAGLES)</li>
+                    <li>Infocomm Vice-Chairman (Production) Certificate of Appointment</li>
+                    <li>YCEP@NP - 1st</li>
+                    <li>YCEP@Central - 3rd</li>
+                    <li>YCEP@RP - 10th</li>
+                    <li>YCEP@SP</li>
+                    <li>YCEP Online</li>
+                    <li>STACK the Flags</li>
+                </ul>
             </div>
 
+        </div>
 
 
 
+    </div>
 
-    </main>
-<footer>
-    © Jun Jie
-</footer>
-    
+    <script>
+
+        function toggleSection(sectionId) {
+            const aboutMeSection = document.getElementById('about-me');
+            const awardsAchievementsSection = document.getElementById('awards-achievements');
+
+            if (sectionId === 'about-me') {
+                aboutMeSection.style.display = 'flex';
+                awardsAchievementsSection.style.display = 'none';
+            } else if (sectionId === 'awards-achievements') {
+                aboutMeSection.style.display = 'none';
+                awardsAchievementsSection.style.display = 'block';
+            }
+        }
+    </script>
 </body>
+
+
 </html>
